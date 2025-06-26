@@ -1,0 +1,230 @@
+.game-container {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.player-status {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap; /* ให้มันขึ้นบรรทัดใหม่ได้ถ้าข้อมูลเยอะ */
+  gap: 30px;
+}
+
+.game-area {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.message-box {
+  background-color: #e0f2f7;
+  border: 1px solid #b3e5fc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: #01579b;
+}
+
+.scenario-box {
+  margin-top: 20px;
+}
+
+.scenario-text {
+  font-size: 1.3em;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.options button,
+.game-area > button { /* สไตล์สำหรับปุ่มใน .game-area โดยรวม */
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.options button:hover,
+.game-area > button:hover {
+  background-color: #45a049;
+}
+
+.insur-buddy-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 25px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.insur-buddy-section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.insur-buddy-section textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.insur-buddy-section button {
+    background-color: #007bff; /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.insur-buddy-section button:hover {
+    background-color: #0056b3;
+}
+
+/* New styles for Market */
+.market-container {
+  width: 100%;
+}
+
+.market-container h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.policy-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.policy-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.policy-card h3 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.policy-card p {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.policy-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.policy-card button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.policy-card button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.owned-policy {
+    font-weight: bold;
+    color: #28a745; /* Green for owned */
+    margin-top: 15px;
+    text-align: center;
+}
+
+.close-market-btn {
+    background-color: #6c757d; /* Grey */
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-market-btn:hover {
+    background-color: #5a6268;
+}
+
+.game-end-screen {
+    padding: 30px;
+    text-align: center;
+}
+
+.game-end-screen h2 {
+    color: #dc3545; /* Red for Game Over */
+    margin-bottom: 20px;
+}
+
+.game-end-screen p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.game-end-screen button {
+    background-color: #28a745; /* Green for Start New Game */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.game-end-screen button:hover {
+    background-color: #218838;
+}
